@@ -47,6 +47,26 @@ public class LLInsertInOrder {
             }
         }
     }
+    public void delete(int data)
+    {
+        Node p = this.head;
+        Node q = null;
+        if(p.data == data)
+        {
+            this.head=p.next;
+        }
+        else{
+            while(p!=null){
+                if(p.data != data){
+                    q=p;
+                    p=p.next;
+                }else{
+                    break;
+                }
+            }
+            q.next=p.next;
+        }
+    }
     public void display()
     {
         Node p = this.head;
@@ -64,6 +84,21 @@ public class LLInsertInOrder {
         ll.insert(9);
         ll.insert(1);
         ll.insert(3);
+        ll.display();
+        ll.delete(3);
+        System.out.println("delete 3");
+        ll.display();
+        ll.delete(9);
+        System.out.println("delete 9");
+        ll.display();
+        ll.delete(1);
+        System.out.println("delete 1");
+        ll.display();
+        ll.delete(2);
+        System.out.println("delete 2");
+        ll.display();
+        ll.delete(5);
+        System.out.println("delete 5");
         ll.display();
     }
 }
