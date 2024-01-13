@@ -1,6 +1,6 @@
 package linkedlist;
 
-public class LinkedListInsert {
+public class LLInsert {
     Node head;
     class Node{
         int data;
@@ -36,7 +36,7 @@ public class LinkedListInsert {
 
     public static void main(String args[])
     {
-        LinkedListInsert l = new LinkedListInsert();
+        LLInsert l = new LLInsert();
         l.insert(3);
         l.insert(1);
         l.insert(2);
