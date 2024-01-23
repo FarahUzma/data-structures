@@ -23,8 +23,6 @@ public class DoubleLLReverse {
             }
             p.next = n;
             n.prev = p;
-
-
         }
     }
         public void display() {
